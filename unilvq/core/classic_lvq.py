@@ -173,3 +173,21 @@ class BaseLVQ(BaseEstimator):
             filename += ".pkl"
         return pickle.load(open(f"{load_path}/{filename}", 'rb'))
 
+
+class Lvq1Classifier(BaseLVQ, ClassifierMixin):
+
+    def __init__(self, n_prototypes_per_class=1, learning_rate=0.1, seed=None):
+        super().__init__(n_prototypes_per_class, learning_rate, seed)
+
+    def fit(self, X, y):
+        self._initialize_prototypes(X, y)
+        for xi, yi in zip(X, y):
+            dists = np.linalg.norm(self.prototypes_ - xi, axis=1)
+            winner_idx = np.argmin(dists)
+            winner_label = self.prototype_labels_[winner_idx]
+
+            if winner_label == yi:
+                self.prototypes_[winner_idx] += self.learning_rate * (xi - self.prototypes_[winner_idx])
+            else:
+                self.prototypes_[winner_idx] -= self.learning_rate * (xi - self.prototypes_[winner_idx])
+        return self
