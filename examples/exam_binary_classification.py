@@ -1,15 +1,15 @@
 #!/usr/bin/env python
-# Created by "Thieu" at 10:04, 12/05/2025 ----------%
+# Created by "Thieu" at 11:24, 02/05/2025 ----------%                                                                               
 #       Email: nguyenthieu2102@gmail.com            %                                                    
 #       Github: https://github.com/thieu1995        %                         
 # --------------------------------------------------%
 
-from sklearn.datasets import load_iris
-from unilvq import Lvq21Classifier, Data
+from unilvq import PnnClassifier, Data
+from sklearn.datasets import load_breast_cancer
 
 
 ## Load data object
-X, y = load_iris(return_X_y=True)
+X, y = load_breast_cancer(return_X_y=True)
 data = Data(X, y)
 
 ## Split train and test
@@ -24,11 +24,13 @@ data.y_train, scaler_y = data.encode_label(data.y_train)
 data.y_test = scaler_y.transform(data.y_test)
 
 ## Train and test
-model = Lvq21Classifier(n_prototypes_per_class=1, learning_rate=0.1, window=0.3, seed=42)
+# model = PnnClassifier(sigma=1.0, kernel='laplace', dist='manhattan', normalize_output=True)
+model = PnnClassifier(sigma=1.0)
 model.fit(data.X_train, data.y_train)
 
 ## Predict
 print("Predicted:", model.predict(data.X_test))
+print("Probabilities:\n", model.predict_proba(data.X_test))
 
 ## Calculate some metrics
 print(model.score(X=data.X_test, y=data.y_test))
