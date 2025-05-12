@@ -253,3 +253,29 @@ class Lvq3Classifier(BaseLVQ, ClassifierMixin):
                     continue
         return self
 
+
+class OptimizedLvq1Classifier(BaseLVQ, ClassifierMixin):
+    def __init__(self, n_prototypes_per_class=1, initial_learning_rate=0.5, learning_decay=0.99, seed=None):
+        super().__init__(n_prototypes_per_class, initial_learning_rate, seed)
+        self.learning_decay = learning_decay
+
+    def fit(self, X, y):
+        self._initialize_prototypes(X, y)
+        n_prototypes = self.prototypes_.shape[0]
+        self.prototype_lr_ = np.full(n_prototypes, self.learning_rate)
+
+        for xi, yi in zip(X, y):
+            dists = np.linalg.norm(self.prototypes_ - xi, axis=1)
+            winner_idx = np.argmin(dists)
+            winner_label = self.prototype_labels_[winner_idx]
+
+            if winner_label == yi:
+                delta = self.prototype_lr_[winner_idx] * (xi - self.prototypes_[winner_idx])
+                self.prototypes_[winner_idx] += delta
+            else:
+                delta = self.prototype_lr_[winner_idx] * (xi - self.prototypes_[winner_idx])
+                self.prototypes_[winner_idx] -= delta
+
+            self.prototype_lr_[winner_idx] *= self.learning_decay
+        return self
+
