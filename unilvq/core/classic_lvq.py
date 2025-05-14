@@ -8,10 +8,10 @@ import numpy as np
 from sklearn.base import ClassifierMixin
 from sklearn.metrics import accuracy_score
 from sklearn.utils import check_random_state
-from unilvq.common import misc
+from unilvq.core.base_model import BaseModel
 
 
-class BaseLVQ(misc.BaseModel):
+class BaseLVQ(BaseModel):
     """
     A base class for Learning Vector Quantization (LVQ) classifiers.
 

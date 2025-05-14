@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, r2_score
 from sklearn.model_selection import train_test_split
 from torch.utils.data import TensorDataset, DataLoader
 from unilvq.common.early_stopper import EarlyStopper
-from unilvq.common.misc import BaseModel
+from unilvq.core.base_model import BaseModel
 
 
 class CustomGLVQ(nn.Module):
