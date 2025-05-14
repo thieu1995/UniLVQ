@@ -10,10 +10,11 @@ import pprint
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from sklearn.base import BaseEstimator
 from permetrics import RegressionMetric, ClassificationMetric
 
 
-class BaseModel:
+class BaseModel(BaseEstimator):
     """
     Base class for all models
     """
@@ -34,12 +35,21 @@ class BaseModel:
             return f"{self.__class__.__name__}(\n  {formatted_params}\n)"
 
     def fit(self, X, y):
+        """
+        Fit the model to the training data.
+        """
         raise NotImplementedError("fit method not implemented")
 
     def predict(self, X):
+        """
+        Predict using the trained model.
+        """
         raise NotImplementedError("predict method not implemented")
 
     def score(self, X, y):
+        """
+        Evaluate the model's performance on the given data.
+        """
         raise NotImplementedError("score method not implemented")
 
     def _evaluate_reg(self, y_true, y_pred, list_metrics=("MSE", "MAE")):
