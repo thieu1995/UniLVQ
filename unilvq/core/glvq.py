@@ -474,7 +474,7 @@ class GlvqRegressor(BaseModel, RegressorMixin):
         X = torch.tensor(X, dtype=torch.float32).to(self.device)
         dists = self.network(X)
         weights = F.softmax(-dists, dim=1)
-        return (weights @ self.prototype_targets_).detach().cpu().numpy().flatten()
+        return (weights @ self.prototype_targets_).detach().cpu().numpy()
 
     def score(self, X, y):
         """
