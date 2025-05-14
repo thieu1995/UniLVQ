@@ -188,6 +188,7 @@ class GlvqClassifier(BaseModel, ClassifierMixin):
         self.network.prototype_labels[:] = torch.tensor(proto_labels, dtype=torch.long, device=self.device)
 
         # Start training
+        self.loss_train = []
         self.network.train()  # Set model to training mode
         for epoch in range(self.epochs):
             # Initialize total loss for this epoch
@@ -209,6 +210,7 @@ class GlvqClassifier(BaseModel, ClassifierMixin):
 
             # Calculate average training loss for this epoch
             avg_loss = total_loss / len(train_loader)
+            self.loss_train.append(avg_loss)
 
             # Perform validation if validation mode is enabled
             if self.valid_mode:
@@ -412,6 +414,7 @@ class GlvqRegressor(BaseModel, RegressorMixin):
         self.optimizer = getattr(torch.optim, self.optim)(list(self.network.parameters()) + [self.prototype_targets_], **self.optim_paras)
 
         # Start training
+        self.loss_train = []
         self.network.train()  # Set model to training mode
         for epoch in range(self.epochs):
             # Initialize total loss for this epoch
@@ -435,6 +438,7 @@ class GlvqRegressor(BaseModel, RegressorMixin):
 
             # Calculate average training loss for this epoch
             avg_loss = total_loss / len(train_loader)
+            self.loss_train.append(avg_loss)
 
             # Perform validation if validation mode is enabled
             if self.valid_mode:
