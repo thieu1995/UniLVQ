@@ -5,13 +5,13 @@
 # --------------------------------------------------%
 
 import numpy as np
-from sklearn.base import BaseEstimator, ClassifierMixin
+from sklearn.base import ClassifierMixin
 from sklearn.metrics import accuracy_score
 from sklearn.utils import check_random_state
 from unilvq.common import misc
 
 
-class BaseLVQ(BaseEstimator, misc.BaseModel):
+class BaseLVQ(misc.BaseModel):
     """
     A base class for Learning Vector Quantization (LVQ) classifiers.
 
