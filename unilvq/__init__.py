@@ -7,3 +7,7 @@
 __version__ = "0.1.0"
 
 from unilvq.common.data_handler import Data, DataTransformer
+from unilvq.common.early_stopper import EarlyStopper
+from unilvq.core.classic_lvq import Lvq1Classifier, Lvq21Classifier, Lvq3Classifier, OptimizedLvq1Classifier
+from unilvq.core.glvq import GlvqClassifier, GlvqRegressor
+from unilvq.core.grlvq import GrlvqClassifier, GrlvqRegressor
