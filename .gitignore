@@ -1,8 +1,6 @@
 drafts/
 .github/
-.flake8
 docs/
-tests/
 .readthedocs.yaml
 tut_upcode.md
 
