@@ -29,7 +29,7 @@ making it suitable for both research and practical applications.
 - ✅ Unified base API compatible with `scikit-learn`
 - ✅ Traditional rule-based LVQ variants: LVQ1, LVQ2.1, LVQ3, Optimized LVQ1:
   + `Lvq1Classifier`, `Lvq2Classifier`, `Lvq3Classifier`, `OptimizedLvq1Classifier`
-- ✅ Neural-based LVQ models: GLVQ, GRLVQ, LGMLVQ (PyTorch-based):
+- ✅ Loss-based LVQ models: GLVQ, GRLVQ, LGMLVQ (PyTorch-based):
   + `GlvqClassifier`, `GlvqRegressor`, `GrlvqClassifier`, `GrlvqRegressor`, `LgmlvqClassifier`
 - ✅ Support for both classification and regression
 - ✅ Built-in support for early stopping, metric evaluation, data scaling
@@ -39,12 +39,12 @@ making it suitable for both research and practical applications.
 
 ## 🧠 Supported Models
 
-| Type                  | Algorithms                             | Module         |
-|-----------------------|-----------------------------------------|----------------|
-| Rule-based LVQ        | LVQ1, LVQ2.1, LVQ3, Optimized LVQ1      | `classic_lvq.py` |
-| Generalized LVQ       | GLVQ (Classifier, Regressor)            | `glvq.py`        |
-| Generalized Relevance LVQ | GRLVQ (Classifier, Regressor)        | `grlvq.py`       |
-| Local Generalized Matrix LVQ | LGMLVQ (Classifier)              | `lgmlvq.py`      |
+| Type                  | Algorithms                                       | Module         |
+|-----------------------|--------------------------------------------------|----------------|
+| Rule-based LVQ        | LVQ1, LVQ2.1, LVQ3, Optimized LVQ1 (Classifiers) | `classic_lvq.py` |
+| Generalized LVQ       | GLVQ (Classifier, Regressor)                     | `glvq.py`        |
+| Generalized Relevance LVQ | GRLVQ (Classifier, Regressor)                    | `grlvq.py`       |
+| Local Generalized Matrix LVQ | LGMLVQ (Classifier)                              | `lgmlvq.py`      |
 
 
 ## 📦 Installation
@@ -86,7 +86,7 @@ y_pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 ```
 
-As can be seen, you do it like any model from Scikit-Learn library such as SVC, RF, DT,... Please read the [/examples](/examples) folder for more use cases.
+As can be seen, you do it like any model from Scikit-Learn library such as SVC, RF, DT,... Please read the [examples](/examples) folder for more use cases.
 
 
 ## 📚 Documentation
