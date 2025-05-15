@@ -1,88 +1,51 @@
-# ProbNet: A Unified Probabilistic Neural Network Framework for Classification and Regression Tasks
 
-[![GitHub release](https://img.shields.io/badge/release-0.1.0-yellow.svg)](https://github.com/thieu1995/ProbNet/releases)
-[![PyPI version](https://badge.fury.io/py/probnet.svg)](https://badge.fury.io/py/probnet)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/probnet.svg)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/probnet.svg)
-[![Downloads](https://pepy.tech/badge/probnet)](https://pepy.tech/project/probnet)
-[![Tests & Publishes to PyPI](https://github.com/thieu1995/ProbNet/actions/workflows/publish-package.yaml/badge.svg)](https://github.com/thieu1995/ProbNet/actions/workflows/publish-package.yaml)
-[![Documentation Status](https://readthedocs.org/projects/probnet/badge/?version=latest)](https://probnet.readthedocs.io/en/latest/?badge=latest)
+# UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks
+
+[![GitHub release](https://img.shields.io/badge/release-0.1.0-yellow.svg)](https://github.com/thieu1995/UniLVQ/releases)
+[![PyPI version](https://badge.fury.io/py/unilvq.svg)](https://badge.fury.io/py/unilvq)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/unilvq.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/unilvq.svg)
+[![Downloads](https://pepy.tech/badge/unilvq)](https://pepy.tech/project/unilvq)
+[![Tests & Publishes to PyPI](https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yaml/badge.svg)](https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yaml)
+[![Documentation Status](https://readthedocs.org/projects/unilvq/badge/?version=latest)](https://unilvq.readthedocs.io/en/latest/?badge=latest)
 [![Chat](https://img.shields.io/badge/Chat-on%20Telegram-blue)](https://t.me/+fRVCJGuGJg1mNDg1)
-[![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.28802531-blue)](https://doi.org/10.6084/m9.figshare.28802435)
+[![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.29002685-blue)](https://doi.org/10.6084/m9.figshare.29002685)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-
-Check out the built library such as: 
-
-https://sklvq.readthedocs.io/en/stable/generated/sklvq.solvers.WaypointGradientDescent.html
-https://www.jmlr.org/papers/volume22/21-0029/21-0029.pdf
-https://github.com/MrNuggelz/sklearn-lvq  ==> They have several traditional and modern variant versions.
-+ Modern variants need Gradient-descent => loss-based ==> Need Pytorch model
-+ traditional variants => distance-based (rule-based) ==> Need Numpy model
-===> All inherit from `BaseEstimator` class of Scikit-Learn
-
-https://github.com/MeGysssTaa/lvq4j
-+ Code in Java
-
-
-https://www.mathworks.com/help/deeplearning/ref/lvqnet.html
-+ Code in matlab
-
-
-+ Prototype-based models in machine learning ==> This name is very general because it has many research directions:
-🔹 Các phương pháp học máy dựa trên prototype:
-1. Learning Vector Quantization (LVQ)
-Một phương pháp học có giám sát sử dụng các prototype để phân loại dữ liệu. LVQ có nhiều biến thể như Generalized LVQ (GLVQ), Robust Soft LVQ (RSLVQ), và Relevance LVQ (GRLVQ).
-
-2. Self-Organizing Maps (SOM)
-Một mạng nơ-ron không có giám sát sử dụng các prototype để ánh xạ dữ liệu vào không gian thấp hơn, thường được sử dụng để trực quan hóa và phân cụm dữ liệu.
-
-3. K-Means Clustering
-Một thuật toán phân cụm không có giám sát sử dụng các centroid (trung tâm cụm) làm prototype để nhóm dữ liệu.
-
-4. Gaussian Mixture Models (GMMs)
-Mô hình phân phối xác suất sử dụng các thành phần Gaussian làm prototype để mô hình hóa dữ liệu phức tạp.
-
-5. Prototypical Networks
-Một phương pháp học sâu cho bài toán few-shot learning, trong đó mỗi lớp được đại diện bởi một prototype tính từ các ví dụ huấn luyện.
-
-6. ProtoAttend
-Một mô hình học sâu tích hợp cơ chế attention để xác định các prototype có liên quan, giúp cải thiện khả năng giải thích và hiệu suất mô hình.
-
-7. Prototype Completion
-Một phương pháp trong few-shot learning nhằm hoàn thiện các prototype bằng cách sử dụng kiến thức nguyên thủy hoặc thông tin bổ sung để cải thiện khả năng phân loại.
-
-8. Prototype-Based Continual Learning
-Một phương pháp học liên tục sử dụng các prototype không gắn nhãn để duy trì cấu trúc cụm trong không gian đặc trưng qua các tác vụ khác nhau.
-
-
-
-
-
-
-
 ---
 
-## 🌟 Overview
+## 📌 Overview
 
-**ProbNet** is a lightweight and extensible Python library that provides a unified implementation of 
-**Probabilistic Neural Network (PNN)** and its key variant, the **General Regression Neural Network (GRNN)**. 
-It supports both **classification** and **regression** tasks, making it suitable for a wide range of 
-supervised learning applications.
+**UniLVQ** is an open-source Python library that provides a unified, extensible, and user-friendly 
+implementation of **Learning Vector Quantization (LVQ)** algorithms for supervised learning. 
+It supports both **classification** and **regression** tasks, and is designed to work seamlessly with the **scikit-learn API**.
 
----
+Built on top of **NumPy** and **PyTorch**, UniLVQ combines rule-based and neural-inspired LVQ variants, 
+making it suitable for both research and practical applications.
 
-## 🔧 Features
 
-- 🧠 Full implementation of PNN for classification
-- 📈 GRNN for regression modeling
-- 🔍 Scikit-learn compatible interface (`fit`, `predict`, `score`)
-- 🔄 Built-in support for many kernels and distance metrics
-- 🧪 Fast prototyping and evaluation
-- 🧩 Easily extendable and readable codebase
-- 📚 Auto-generated documentation with Sphinx 
-- Probabilistic models: `PnnClassifier`, `GrnnRegressor`
----
+## 🚀 Features
+
+- ✅ Unified base API compatible with `scikit-learn`
+- ✅ Traditional rule-based LVQ variants: LVQ1, LVQ2.1, LVQ3, Optimized LVQ1:
+  + `Lvq1Classifier`, `Lvq2Classifier`, `Lvq3Classifier`, `OptimizedLvq1Classifier`
+- ✅ Neural-based LVQ models: GLVQ, GRLVQ, LGMLVQ (PyTorch-based):
+  + `GlvqClassifier`, `GlvqRegressor`, `GrlvqClassifier`, `GrlvqRegressor`, `LgmlvqClassifier`
+- ✅ Support for both classification and regression
+- ✅ Built-in support for early stopping, metric evaluation, data scaling
+- ✅ Modular design for easy extension and customization
+- ✅ CI-tested, documented, and easy to use
+
+
+## 🧠 Supported Models
+
+| Type                  | Algorithms                             | Module         |
+|-----------------------|-----------------------------------------|----------------|
+| Rule-based LVQ        | LVQ1, LVQ2.1, LVQ3, Optimized LVQ1      | `classic_lvq.py` |
+| Generalized LVQ       | GLVQ (Classifier, Regressor)            | `glvq.py`        |
+| Generalized Relevance LVQ | GRLVQ (Classifier, Regressor)        | `grlvq.py`       |
+| Local Generalized Matrix LVQ | LGMLVQ (Classifier)              | `lgmlvq.py`      |
+
 
 ## 📦 Installation
 
@@ -92,7 +55,7 @@ You can install the library using `pip` (once published to PyPI):
 pip install unilvq
 ```
 
-After installation, you can import ProbNet as any other Python module:
+After installation, you can import `UniLVQ` as any other Python module:
 
 ```sh
 $ python
@@ -102,42 +65,33 @@ $ python
 
 ## 🚀 Quick Start
 
-For Classification using PNN:
+For classification problem using LVQ1 classifier:
 
 ```python
-from unilvq import PnnClassifier
+from unilvq import Lvq1Classifier
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
+# Load data
 X, y = load_iris(return_X_y=True)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
-model = PnnClassifier(sigma=0.1)
+# Train LVQ1 model
+model = Lvq1Classifier(n_prototypes_per_class=1, learning_rate=0.1, seed=42)
 model.fit(X_train, y_train)
-print("Accuracy:", model.score(X_test, y_test))
+
+# Evaluate
+y_pred = model.predict(X_test)
+print("Accuracy:", accuracy_score(y_test, y_pred))
 ```
 
-For Regression using GRNN:
-
-```python
-from unilvq import GrnnRegressor
-from sklearn.datasets import load_diabetes
-from sklearn.model_selection import train_test_split
-
-X, y = load_diabetes(return_X_y=True)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-model = GrnnRegressor(sigma=0.5)
-model.fit(X_train, y_train)
-print("R2 Score:", model.score(X_test, y_test))
-```
-
-As can be seen, you do it like any model from Scikit-Learn library such as SVC, RF, DT,...
+As can be seen, you do it like any model from Scikit-Learn library such as SVC, RF, DT,... Please read the [/examples](/examples) folder for more use cases.
 
 
 ## 📚 Documentation
 
-Documentation is available at: 👉 https://probnet.readthedocs.io
+Documentation is available at: 👉 https://unilvq.readthedocs.io
 
 You can build the documentation locally:
 
@@ -154,7 +108,7 @@ pytest tests/
 ```
 
 ## 🤝 Contributing
-We welcome contributions to `ProbNet`! If you have suggestions, improvements, or bug fixes, feel free to fork 
+We welcome contributions to `UniLVQ`! If you have suggestions, improvements, or bug fixes, feel free to fork 
 the repository, create a pull request, or open an issue.
 
 
@@ -166,25 +120,25 @@ This project is licensed under the GPLv3 License. See the LICENSE file for more 
 Please include these citations if you plan to use this library:
 
 ```bibtex
-@software{thieu20250503,
+@software{thieu20250515UniLVQ,
   author       = {Nguyen Van Thieu},
-  title        = {ProbNet: A Unified Probabilistic Neural Network Framework for Classification and Regression Tasks},
+  title        = {UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks},
   month        = may,
   year         = 2025,
   doi         = {10.6084/m9.figshare.28802435},
-  url          = {https://github.com/thieu1995/ProbNet}
+  url          = {https://github.com/thieu1995/UniLVQ}
 }
 ```
 
 ## Official Links 
 
-* Official source code repo: https://github.com/thieu1995/ProbNet
-* Official document: https://probnet.readthedocs.io/
-* Download releases: https://pypi.org/project/probnet/
-* Issue tracker: https://github.com/thieu1995/ProbNet/issues
-* Notable changes log: https://github.com/thieu1995/ProbNet/blob/master/ChangeLog.md
+* Official source code repo: https://github.com/thieu1995/UniLVQ
+* Official document: https://unilvq.readthedocs.io/
+* Download releases: https://pypi.org/project/unilvq/
+* Issue tracker: https://github.com/thieu1995/UniLVQ/issues
+* Notable changes log: https://github.com/thieu1995/UniLVQ/blob/master/ChangeLog.md
 * Official chat group: https://t.me/+fRVCJGuGJg1mNDg1
 
 ---
 
-Developed by: [Thieu](mailto:nguyenthieu2102@gmail.com?Subject=GrafoRVFL_QUESTIONS) @ 2025
+Developed by: [Thieu](mailto:nguyenthieu2102@gmail.com?Subject=UniLVQ_QUESTIONS) @ 2025
