@@ -1,8 +1,6 @@
 unilvq.common package
 =====================
 
-Submodules
-----------
 
 unilvq.common.data\_handler module
 ----------------------------------
@@ -40,14 +38,6 @@ unilvq.common.verifier module
 -----------------------------
 
 .. automodule:: unilvq.common.verifier
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: unilvq.common
    :members:
    :undoc-members:
    :show-inheritance:

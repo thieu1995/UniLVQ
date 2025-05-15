@@ -4,13 +4,13 @@ Citation Request
 
 Please include these citations if you plan to use this library::
 
-    @software{thieu20250503,
+    @software{thieu20250515UniLVQ,
         author       = {Nguyen Van Thieu},
-        title        = {ProbNet: A Unified Probabilistic Neural Network Framework for Classification and Regression Tasks},
+        title        = {UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks},
         month        = may,
         year         = 2025,
-        doi         = {10.6084/m9.figshare.28802435},
-        url          = {https://github.com/thieu1995/ProbNet}
+        doi         = {10.6084/m9.figshare.29002685},
+        url          = {https://github.com/thieu1995/UniLVQ}
     }
 
 If you have an open-ended or a research question, you can contact me via nguyenthieu2102@gmail.com.
@@ -20,11 +20,11 @@ If you have an open-ended or a research question, you can contact me via nguyent
 Important links
 ===============
 
-* Official source code repo: https://github.com/thieu1995/ProbNet
-* Official document: https://probnet.readthedocs.io/
-* Download releases: https://pypi.org/project/probnet
-* Issue tracker: https://github.com/thieu1995/ProbNet/issues
-* Notable changes log: https://github.com/thieu1995/ProbNet/blob/main/ChangeLog.md
+* Official source code repo: https://github.com/thieu1995/UniLVQ
+* Official document: https://unilvq.readthedocs.io/
+* Download releases: https://pypi.org/project/unilvq
+* Issue tracker: https://github.com/thieu1995/UniLVQ/issues
+* Notable changes log: https://github.com/thieu1995/UniLVQ/blob/main/ChangeLog.md
 
 * This project also related to our another projects which are "optimization" and "machine learning", check it here:
     * https://github.com/thieu1995/mealpy

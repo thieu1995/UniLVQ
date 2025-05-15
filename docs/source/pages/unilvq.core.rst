@@ -1,8 +1,6 @@
 unilvq.core package
 ===================
 
-Submodules
-----------
 
 unilvq.core.base\_model module
 ------------------------------
@@ -40,14 +38,6 @@ unilvq.core.lgmlvq module
 -------------------------
 
 .. automodule:: unilvq.core.lgmlvq
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: unilvq.core
    :members:
    :undoc-members:
    :show-inheritance:
