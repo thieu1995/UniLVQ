@@ -47,15 +47,30 @@ making it suitable for both research and practical applications.
 | Local Generalized Matrix LVQ | LGMLVQ (Classifier)                              | `lgmlvq.py`      |
 
 
+## 📖 Citation Request 
+
+Please include these citations if you plan to use this library:
+
+```bibtex
+@software{thieu20250515UniLVQ,
+  author       = {Nguyen Van Thieu},
+  title        = {UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks},
+  month        = June,
+  year         = 2025,
+  doi         = {10.6084/m9.figshare.28802435},
+  url          = {https://github.com/thieu1995/UniLVQ}
+}
+```
+
 ## 📦 Installation
 
-You can install the library using `pip` (once published to PyPI):
+Install the latest version from PyPI:
 
 ```bash
 pip install unilvq
 ```
 
-After installation, you can import `UniLVQ` as any other Python module:
+Verify installation:
 
 ```sh
 $ python
@@ -116,28 +131,14 @@ the repository, create a pull request, or open an issue.
 This project is licensed under the GPLv3 License. See the LICENSE file for more details.
 
 
-## Citation Request
-Please include these citations if you plan to use this library:
+## 📎 Official channels 
 
-```bibtex
-@software{thieu20250515UniLVQ,
-  author       = {Nguyen Van Thieu},
-  title        = {UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks},
-  month        = may,
-  year         = 2025,
-  doi         = {10.6084/m9.figshare.28802435},
-  url          = {https://github.com/thieu1995/UniLVQ}
-}
-```
-
-## Official Links 
-
-* Official source code repo: https://github.com/thieu1995/UniLVQ
-* Official document: https://unilvq.readthedocs.io/
-* Download releases: https://pypi.org/project/unilvq/
-* Issue tracker: https://github.com/thieu1995/UniLVQ/issues
-* Notable changes log: https://github.com/thieu1995/UniLVQ/blob/master/ChangeLog.md
-* Official chat group: https://t.me/+fRVCJGuGJg1mNDg1
+* 🔗 [Official source code repository](https://github.com/thieu1995/UniLVQ)
+* 📘 [Official document](https://unilvq.readthedocs.io/)
+* 📦 [Download releases](https://pypi.org/project/unilvq/) 
+* 🐞 [Issue tracker](https://github.com/thieu1995/UniLVQ/issues) 
+* 📝 [Notable changes log](/ChangeLog.md)
+* 💬 [Official discussion group](https://t.me/+fRVCJGuGJg1mNDg1)
 
 ---
 
