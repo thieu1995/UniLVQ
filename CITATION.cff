@@ -5,7 +5,7 @@ authors:
     given-names: "Nguyen"
     orcid: "https://orcid.org/0000-0001-9994-8747"
 title: "UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks"
-version: v0.1.0
+version: v0.2.0
 doi: 10.6084/m9.figshare.29002685
-date-released: 2025-05-15
+date-released: 2025-06-06
 url: "https://github.com/thieu1995/UniLVQ"

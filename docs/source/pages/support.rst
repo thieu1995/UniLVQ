@@ -7,7 +7,7 @@ Please include these citations if you plan to use this library::
     @software{thieu20250515UniLVQ,
         author       = {Nguyen Van Thieu},
         title        = {UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks},
-        month        = may,
+        month        = June,
         year         = 2025,
         doi         = {10.6084/m9.figshare.29002685},
         url          = {https://github.com/thieu1995/UniLVQ}
