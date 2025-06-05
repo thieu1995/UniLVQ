@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0] - Major Update
+
++ Update `setup.py` for more robust and maintainable package management.
++ Update dependencies and remove `mealpy` dependency.
++ Update workflows for testing and publishing.
++ Update README.md, citation.cff, documentation.
++ Update `data_handler` module with FeatureEngineering, TimeSeriesDifferencer, and DataTransformer classes.
++ Update `data_scaler` module with OneHotEncoder and LabelEncoder classes.
+
+
+--------------------------------------------------------------------------------------
+
 ## [0.1.0] - Initial Release
 
 The first official release of `UniLVQ` includes:
