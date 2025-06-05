@@ -6,7 +6,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/unilvq.svg)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/unilvq.svg)
 [![Downloads](https://pepy.tech/badge/unilvq)](https://pepy.tech/project/unilvq)
-[![Tests & Publishes to PyPI](https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yaml/badge.svg)](https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yaml)
+[![Tests & Publishes to PyPI](https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yml/badge.svg)](https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yml)
 [![Documentation Status](https://readthedocs.org/projects/unilvq/badge/?version=latest)](https://unilvq.readthedocs.io/en/latest/?badge=latest)
 [![Chat](https://img.shields.io/badge/Chat-on%20Telegram-blue)](https://t.me/+fRVCJGuGJg1mNDg1)
 [![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.29002685-blue)](https://doi.org/10.6084/m9.figshare.29002685)

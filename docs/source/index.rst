@@ -18,8 +18,8 @@ Welcome to UniLVQ's documentation!
 .. image:: https://img.shields.io/pypi/dm/unilvq.svg
    :target: https://img.shields.io/pypi/dm/unilvq.svg
 
-.. image:: https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yaml/badge.svg
-   :target: https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yaml
+.. image:: https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yml/badge.svg
+   :target: https://github.com/thieu1995/UniLVQ/actions/workflows/publish-package.yml
 
 .. image:: https://pepy.tech/badge/unilvq
    :target: https://pepy.tech/project/unilvq
