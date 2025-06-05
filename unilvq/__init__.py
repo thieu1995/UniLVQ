@@ -4,7 +4,7 @@
 #       Github: https://github.com/thieu1995        %                         
 # --------------------------------------------------%
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 from unilvq.common.data_handler import Data, DataTransformer
 from unilvq.common.early_stopper import EarlyStopper

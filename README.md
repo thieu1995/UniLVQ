@@ -1,7 +1,7 @@
 
 # UniLVQ: A Unified Learning Vector Quantization Framework for Supervised Learning Tasks
 
-[![GitHub release](https://img.shields.io/badge/release-0.1.0-yellow.svg)](https://github.com/thieu1995/UniLVQ/releases)
+[![GitHub release](https://img.shields.io/badge/release-0.2.0-yellow.svg)](https://github.com/thieu1995/UniLVQ/releases)
 [![PyPI version](https://badge.fury.io/py/unilvq.svg)](https://badge.fury.io/py/unilvq)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/unilvq.svg)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/unilvq.svg)

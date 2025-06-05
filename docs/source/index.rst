@@ -6,7 +6,7 @@
 Welcome to UniLVQ's documentation!
 ==================================
 
-.. image:: https://img.shields.io/badge/release-0.1.0-yellow.svg
+.. image:: https://img.shields.io/badge/release-0.2.0-yellow.svg
    :target: https://github.com/thieu1995/UniLVQ/releases
 
 .. image:: https://badge.fury.io/py/unilvq.svg

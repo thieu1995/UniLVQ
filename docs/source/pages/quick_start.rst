@@ -4,7 +4,7 @@ Installation
 
 * Install the `current PyPI release <https://pypi.python.org/pypi/unilvq />`_::
 
-   $ pip install unilvq==0.1.0
+   $ pip install unilvq==0.2.0
 
 
 * Install directly from source code::
